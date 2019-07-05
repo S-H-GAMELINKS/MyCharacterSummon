@@ -34,5 +34,5 @@ int main() {
         res.set_content(js, "text/javascript");
     });
 
-    svr.listen("localhost", 3000);
+    svr.listen("0.0.0.0", 8080);
 }
