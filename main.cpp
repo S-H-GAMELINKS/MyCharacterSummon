@@ -24,6 +24,8 @@ int main() {
 
     const std::string js = load_static("static/index.js"); 
 
+    svr.set_base_dir("static");
+
     svr.Get("/", [&](const httplib::Request& req, httplib::Response& res){
         res.set_content(html, "text/html");
     });
